@@ -16,3 +16,4 @@ https://github.com/jadessechan/Retrieval-Chatbot
 You can enter key words or sentences related to Raft to get a clear enought response from Bot. The corpus- paper in our case- is large enough to not have the same sentence extracted as a reply from Bot.
 
 Here is an example of a chat with Bot using both key words and direct questions:
+![chat example](https://github.com/jadessechan/Retrieval-Chatbot/blob/master/imgs/chat_example.png)
