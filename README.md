@@ -18,14 +18,16 @@ Bot will output the corresponding answer!
 
 Here is an example of a chat with Bot where I asked questions identical to the one in the dataset and others with key words (you can also view this on [main.ipynb](https://github.com/jadessechan/Retrieval-Chatbot/blob/master/main.ipynb):
 
-**When does tutoring start?**
-Tutoring begins 5-11pm CDT from Sunday to Thursday (excluding school holidays) using the queue app.
-**Are there any rules for tutoring?**
-Tutors are asked to limit time for each individual tutoring session to 10-20 minutes, since we have over 150+ students in 141/142/241 and 9 tutors. Tutoring is restricted to tutoring hours only, and only available using the queue app. Please do NOT DM tutors directly.
-**Are there expectations for tutoring?**
-Tutoring is first-come first-serve for 141, 142, 241 only. Tutors will help you work through concepts, debug, and provide resources for further information.
+**When does tutoring start?**<br />
+>Tutoring begins 5-11pm CDT from Sunday to Thursday (excluding school holidays) using the queue app.<br />
 
-As expected, the first two questions output the correct response from Bot because the vectors and thus cosine similarity are identical to the ones in the data set. However, the last question doesn't output the associated response. I mentioned a key word, 'expectation', but Bot's answer was associated to the questions "What is tutoring?" and "Tell me about tutoring?".
+**Are there any rules for tutoring?**<br />
+>Tutors are asked to limit time for each individual tutoring session to 10-20 minutes, since we have over 150+ students in 141/142/241 and 9 tutors. Tutoring is restricted to tutoring hours only, and only available using the queue app. Please do NOT DM tutors directly.<br />
+
+**Are there expectations for tutoring?**<br />
+>Tutoring is first-come first-serve for 141, 142, 241 only. Tutors will help you work through concepts, debug, and provide resources for further information.<br />
+
+As expected, the first two questions output the correct response from Bot because the vectors and thus cosine similarity are identical to the ones in the data set. However, the last question doesn't output the associated response. I mentioned a key word, 'expectation', but Bot's answer was associated to the questions "What is tutoring?" and "Tell me about tutoring?" in the data.
 
 ## Implementation
 I used Scikit-learn library's TfidfVectorizer and cosine_similarity to compare how similar the user input is to the *Questions* column in my data.
